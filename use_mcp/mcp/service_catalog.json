@@ -1,0 +1,80 @@
+{
+  "clients": {
+    "client_01": {
+      "segment": "standard",
+      "service_profile": "retail_basic",
+      "active_packages": [
+        "alerts_plus"
+      ]
+    },
+    "client_02": {
+      "segment": "premium",
+      "service_profile": "retail_priority",
+      "active_packages": [
+        "travel_plus"
+      ]
+    },
+    "client_03": {
+      "segment": "young",
+      "service_profile": "retail_start",
+      "active_packages": []
+    }
+  },
+  "service_packages": {
+    "alerts_plus": {
+      "package_code": "alerts_plus",
+      "name": "Уведомления+",
+      "segments": [
+        "standard",
+        "premium",
+        "young"
+      ],
+      "monthly_fee": 99,
+      "features": [
+        "Push-уведомления по операциям",
+        "История уведомлений за 90 дней",
+        "Настройка событий и лимитов"
+      ]
+    },
+    "travel_plus": {
+      "package_code": "travel_plus",
+      "name": "Путешествия+",
+      "segments": [
+        "premium"
+      ],
+      "monthly_fee": 499,
+      "features": [
+        "Повышенный кешбэк на поездки",
+        "Подбор предложений партнёров",
+        "Приоритетная поддержка в поездках"
+      ]
+    },
+    "family_plus": {
+      "package_code": "family_plus",
+      "name": "Семья+",
+      "segments": [
+        "standard",
+        "premium"
+      ],
+      "monthly_fee": 249,
+      "features": [
+        "Общий бюджет и категории расходов",
+        "Совместные цели накопления",
+        "Напоминания по регулярным платежам"
+      ]
+    },
+    "student_plus": {
+      "package_code": "student_plus",
+      "name": "Старт+",
+      "segments": [
+        "young"
+      ],
+      "monthly_fee": 0,
+      "features": [
+        "Льготные условия на переводы",
+        "Подбор скидок у партнёров",
+        "Напоминания по учебным платежам"
+      ]
+    }
+  }
+}
